@@ -10,7 +10,7 @@
 (function(factory) {
   /* global define */
   /* istanbul ignore next */
-  if ( typeof define === 'function' && define.amd ) {
+  if (typeof define === 'function' && define.amd) {
     define(['jquery'], factory);
   } else if ( typeof module === 'object' && module.exports ) {
     // Node/CommonJS

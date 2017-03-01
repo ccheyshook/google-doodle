@@ -1,5 +1,14 @@
 // YOUR SCRIPTS GO HERE
 
+// Draw SVG
+
+var google = $('svg').drawsvg({
+  reverse: true,
+  duration: 500
+});
+
+google.drawsvg('animate');
+
 // Store 3 images
 
 var img0 = '../img/200.jpg';
