@@ -2,12 +2,12 @@
 
 @import 'google-homepage';
 
+
 h1 {
   display: inline; 
 }
 
-.stage svg {
-  width: 25%;
+#stage svg {
   animation: fadeInUp 5s 5;
 }
 
