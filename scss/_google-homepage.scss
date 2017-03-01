@@ -1,16 +1,12 @@
 // Basic Styling for Google Homepage
 
 /* Stage */
-
 #stage {
-    background: gray;
-    height: 300px;
-    width: 600px;
-}
-
-#stage #star {
-    height: 100px;
-    width: 100px;
+  height: 300px;
+  width: 600px;
+  
+  position: relative;
+  overflow: hidden;
 }
 
 
@@ -36,7 +32,7 @@ div {
 
 button {
     display: inline-block;
-    background-color: #f2f2f2;
+    background-color: darkblue;
     border: 1px solid #f2f2f2;
     border-radius: 2px;
     color: #757575;

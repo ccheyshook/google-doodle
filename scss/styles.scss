@@ -2,30 +2,42 @@
 
 @import 'google-homepage';
 
-
-// First Frame
-img {
-    transform: scale(.25) rotate(0);
-    opacity: .25;
-    width: 40%;
-    transition: transform 1s;
+h1 {
+  display: inline; 
 }
 
-// Last Frame
+.stage svg {
+  width: 25%;
+  animation: fadeInUp 5s 5;
+}
 
-img:hover {
+svg:hover {
+  width:25%;
+  animation: lightSpeedOut 4s infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
     opacity: 1;
-    transform: scale(1.5) rotate(180deg);
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
-.line {
-    fill:none;
-    stroke:#000000;
-    stroke-width:9;
-    stroke-miterlimit:10;
-}
+@keyframes lightSpeedOut {
+  from {
+    opacity: 1;
+  }
 
-.line:hover {
-    stroke: red;
-    transition: stroke 1s;
+  to {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
 }
