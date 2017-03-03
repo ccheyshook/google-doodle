@@ -1,5 +1,7 @@
 // Paste jQuery Plugin Code Here
 
+
+
 /*!
  * jQuery DrawSVG v1.1.0 (Oct 05 2016) - http://lcdsantos.github.io/jquery-drawsvg/
  *
@@ -10,7 +12,7 @@
 (function(factory) {
   /* global define */
   /* istanbul ignore next */
-  if (typeof define === 'function' && define.amd) {
+  if ( typeof define === 'function' && define.amd ) {
     define(['jquery'], factory);
   } else if ( typeof module === 'object' && module.exports ) {
     // Node/CommonJS

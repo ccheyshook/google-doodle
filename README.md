@@ -30,3 +30,8 @@ Recreational diving, sometimes called sport diving or subaquatics, is a popular 
 ** via wikipedia
 
 
+## Special thanks to those who helped directly and those who inspired me
+
+* Animate.css
+* Johan Harteveld on Codepen for bubble inspiration
+* Leonardo Santos for drawsvg
