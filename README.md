@@ -35,3 +35,4 @@ Recreational diving, sometimes called sport diving or subaquatics, is a popular 
 * Animate.css
 * Johan Harteveld on Codepen for bubble inspiration
 * Leonardo Santos for drawsvg
+* Nick Pearson for wave animation inspiration
