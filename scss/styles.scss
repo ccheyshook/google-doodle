@@ -1,7 +1,7 @@
-body
-{
-  top: 0;
-  background:#002040;
+@import 'google-homepage';
+
+body {
+  background:blue;
 }
 
 //SVG Path
@@ -12,6 +12,11 @@ stroke-dashoffset:0.00;
 
 }
 
+svg g 
+{
+    fill: white;
+}
+
 //Waves
 .waves
 {
@@ -19,6 +24,7 @@ stroke-dashoffset:0.00;
 	height:25vh;
   min-height:10em;
 	position:fixed;
+    top: 0;
 	overflow:hidden;
 }
 
@@ -130,10 +136,11 @@ stroke-dashoffset:0.00;
 #bubbles { height: 100% }
 body { overflow: hidden }
 #bubbles { padding: 100px 0 }
+
 .bubble {
     width: 60px;
     height: 60px;
-    background: #66CCCC;
+    background: #66CCCC; 
     border-radius: 200px;
     position: absolute;
 }
