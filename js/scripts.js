@@ -1,3 +1,4 @@
+//Draw
 var google = $('svg').drawsvg({
   duration : 5000,
   reverse: true,
@@ -6,18 +7,17 @@ var google = $('svg').drawsvg({
 
 google.drawsvg('animate');
 
-
 // Get random number
 var max = 5;
 var numRand = Math.floor( Math.random() * max );
 console.log(numRand);
 
 // Store Colors
-var color0 = 'red';
-var color1 = 'yellow';
-var color2 = 'green';
-var color3 = 'purple';
-var color4 = 'orange';
+var color0 = 'coral';
+var color1 = '#99FFCC';
+var color2 = '#CCFFFF';
+var color3 = '#FFFF99';
+var color4 = '#CCCCFF';
 
 // On page load
 // Set random color

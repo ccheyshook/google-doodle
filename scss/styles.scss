@@ -1,20 +1,6 @@
-@import 'google-homepage';
-
-body {
-  background: #002040;
-}
-
-//SVG Path
-path {
-stroke: white; 
-stroke-dasharray: 988.00 988.00;
-stroke-dashoffset:0.00;
-
-}
-
-svg g 
+body
 {
-    fill: white;
+  background:#002040;
 }
 
 //Waves
@@ -24,13 +10,12 @@ svg g
 	height:25vh;
   min-height:10em;
 	position:fixed;
-    top: 0;
+  top: 0;
 	overflow:hidden;
 }
 
 .wave
 {
-    
 	width:calc( 100% + 4em );
 	height:100%;
 	position:absolute;
@@ -100,6 +85,25 @@ svg g
   background-position:bottom right;
 }
 
+//Bubble Animation
+@keyframes goingup { 
+    0% { 
+        top: 500px;
+    }
+    100% { 
+        top: -500px;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+ 
 //Wave Animation
 @keyframes wave_1
 {
@@ -131,16 +135,26 @@ svg g
 	to   { transform: rotate(360deg) translatey(-1.5em) rotate(-360deg) ; }
 }
 
+//SVG Path
+path {
+stroke: #66CCCC; 
+stroke-dasharray: 988.00 988.00;
+stroke-dashoffset:0.00;
+
+}
+
+svg polygon {
+  background: #66CCCC;
+}
 
 // Bubbles
 #bubbles { height: 100% }
 body { overflow: hidden }
 #bubbles { padding: 100px 0 }
-
 .bubble {
-    width: 85px;
-    height: 85px;
-    background: #66CCCC; 
+    width: 60px;
+    height: 60px;
+    background: #66CCCC;
     border-radius: 200px;
     position: absolute;
 }
@@ -178,32 +192,5 @@ body { overflow: hidden }
     opacity: 0.3; 
     animation: goingup 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
 }
-
-//Bubble Animation
-@keyframes goingup { 
-    0% { 
-        top: 500px;
-    }
-    100% { 
-        top: -500px;
-    }
-}
-
-@keyframes sideWays { 
-    0% { 
-        margin-left:0px;
-    }
-    100% { 
-        margin-left:50px;
-    }
-}
-
-/* Doodle Stage */
-#stage {
-  padding: 7em;
-  height: 300px;
-  width: 600px;
-}
-
 
 
